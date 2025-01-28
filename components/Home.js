@@ -12,7 +12,7 @@ function Home() {
   const [topArticle, setTopArticle] = useState({});
 
   useEffect(() => {
-    fetch('https://morning-news-backend-sigma.vercel.app/articles')
+    fetch('https://morning-news-backend-murex.vercel.app/articles')
       .then(response => response.json())
       .then(data => {
         setTopArticle(data.articles[0]);
