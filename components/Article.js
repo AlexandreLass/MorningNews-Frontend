@@ -14,7 +14,7 @@ function Article(props) {
 		if (!user.token) {
 			return;
 		}
-		fetch(`http://localhost:3000/users/canBookmark/${user.token}`)
+		fetch(`https://morning-news-backend-zeta.vercel.app/users/canBookmark/${user.token}`)
 			.then(response => response.json())
 			.then(data => {
 				if (data.result && data.canBookmark) {
